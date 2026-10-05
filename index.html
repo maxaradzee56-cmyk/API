@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A little inspiration, one piece of advice at a time."
+    />
+    <title>Advice Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <article class="advice-card" aria-labelledby="advice-title">
+        <h1 class="advice-label" id="advice-title">
+          ADVICE <span id="advice-id">#117</span>
+        </h1>
+        <blockquote class="advice-text" id="advice-text" aria-live="polite">
+          “It is easy to sit up and take notice, what’s difficult is getting up
+          and taking action.”
+        </blockquote>
+        <div class="divider" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 44 16" focusable="false">
+            <rect x="15" y="1" width="3" height="14" rx="1.5" />
+            <rect x="26" y="1" width="3" height="14" rx="1.5" />
+          </svg>
+          <span></span>
+        </div>
+        <button class="new-advice" type="button" aria-label="Get a new piece of advice">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M7.2 3.5h9.6a1.7 1.7 0 0 1 1.7 1.7v13.6a1.7 1.7 0 0 1-2.6 1.4l-3.9-2.5-3.9 2.5a1.7 1.7 0 0 1-2.6-1.4V5.2a1.7 1.7 0 0 1 1.7-1.7Z"
+            />
+          </svg>
+        </button>
+        <p class="error-message" id="error-message" role="status" hidden>
+          Couldn’t load advice. Please try again.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
